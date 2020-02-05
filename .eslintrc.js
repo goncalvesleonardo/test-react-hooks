@@ -20,10 +20,13 @@ module.exports = {
   },
   plugins: [
     'react',
+    'react-hooks'
   ],
   rules: {
     "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }],
     "no-param-reassign": "off",
-    // "no-console": ["error", { allow: ["tron"]}]
+    // "no-console": ["error", { allow: ["tron"]}],
+    "react-hooks/rules-of-hooks": "error",
+    "react-hooks/exhaustive-deps": "warn"
   },
 };
